@@ -1,0 +1,442 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.nav a img {
+    position: absolute;
+    top: -27px;
+    width: 270px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+    z-index: 888;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    right: 25px;
+    z-index: 999;
+    padding-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    display: none !important;
+}
+
+.fa-bars {
+    font-size: 25px;
+    color: black;
+    display: none !important;
+    padding-right: 20px;
+}
+
+input:checked~.list {
+    background-color: rgb(7, 8, 8, (0.7));
+    right: 0;
+}
+
+
+.list a ul::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: red;
+    margin: auto;
+    display: block;
+}
+
+.list a ul:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.aboutimg {
+    height: 76vh;
+}
+
+.logo {
+    width: fit-content;
+}
+
+.aboutwallpaper {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 70px;
+}
+
+.aboutmobile {
+    display: none !important;
+}
+
+.aboutheading {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+}
+
+.aboutheading h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.aboutheading p {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.aboutcontent {
+    display: flex;
+    align-items: flex-start;
+}
+
+.aboutcontent p {
+    font-size: 20px;
+    padding: 20px;
+    width: 80%;
+    text-align: justify;
+}
+
+.aboutfontbox {
+    min-height: 100vh;
+    background-image: url(./fontbackground\ image.webp);
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.aboutfontbox>h1 {
+    font-size: 40px;
+}
+
+.aboutfont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.fa-about {
+    font-size: 40px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fa-about:hover {
+    transform: rotate(360deg);
+}
+
+.aboutfontbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue;
+}
+
+.fontabout {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.aboutfontcontent>p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.aboutfontcontent>h2 {
+    font-size: 30px;
+}
+
+.brands {
+    width: 170px;
+    height: 250px;
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: aliceblue;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 4.5);
+    transition:400ms;
+    cursor: pointer;
+    margin: 10px;
+}
+marquee{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+}
+
+.brands:hover {
+    transform: scale(1.3);
+}
+
+.brands1 {
+    width: 100px;
+    height: 100px;
+}
+
+.brandsh1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.brandbox {
+    display: flex;
+    gap: 30px;
+}
+
+.aboutbrands {
+    min-height: 50vh;
+    gap: 40px;
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+}
+
+.bottombox {
+    min-height: 50vh;
+    background-image: url(./HD-wallpaper-black-bmw-car.jpg);
+    width: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.bottombox1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 85px;
+    margin-bottom: 78px;
+}
+
+.bottombox2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.bottomlist {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 60px;
+}
+
+a {
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.bottombox1>button {
+    width: 369px;
+    height: 62px;
+    font-size: 25px;
+    border: none;
+    position: absolute;
+    bottom: 166px;
+    transition: 0.1s;
+    background-color: rgb(248, 13, 25);
+}
+.bottombox1>button:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar>a:hover {
+    color: #ef0303;
+}
+
+.tandc {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    gap: 20px;
+}
+
+.bottomfonts {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar:hover {
+    color: #ef0303;
+}
+
+.tandc :hover {
+    color: #ef0303;
+}
+
+.bottomfonts :hover {
+    color: #ef0303;
+}
+
+.box1font {
+    margin-right: 10px;
+    color: rgb(27 27 211);
+}
+
+@media screen and (min-width:300px) and (max-width:800px) {
+    .aboutwallpaper {
+        display: none;
+    }
+
+    .aboutimg {
+        min-height: 85vh;
+    }
+
+    .aboutmobile {
+        display: block !important;
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        top: 70px;
+        height: 400px;
+    }
+
+    .aboutcontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutcontent p {
+        width: 100%;
+    }
+
+    .logo {
+        width: 250px;
+    }
+}
+
+.brandsh1 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.navbar {
+    font-size: 12px;
+    gap: 10px;
+}
+
+@media screen and (min-width:300px) and (max-width:950px) {
+    .aboutfont {
+        grid-template-columns: auto;
+        gap: 30px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:530px) {
+    .aboutfontbox>h1 {
+        font-size: 30px;
+    }
+
+    .aboutfontcontent>h2 {
+        font-size: 24px;
+    }
+
+    .navbar>a {
+        font-size: 10px;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:950px) {
+    .list {
+        position: fixed;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        justify-content: space-evenly;
+        top: 60px;
+        align-items: center;
+        right: -100%;
+        width: 50%;
+        height: 430px;
+        transition: 0.5s;
+        opacity: 0.9;
+        z-index: 9;
+    }
+
+    .fa-bars {
+        display: block !important;
+    }
+
+    .fa-bars {
+        color: aliceblue;
+        position: absolute;
+        right: 10px;
+        top: 22px;
+    }
+
+}
+@media screen and (min-width:300px) and (max-width:950px) {
+    
+    .bottombox {
+        flex-direction: column;
+    }
+
+    .bottombox1>button {
+        width: 250px;
+        bottom: 375px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:530px) {
+.navbar>a {
+    font-size: 10px;
+    gap: 10px;
+}
+.bottombox1>img {
+    width: 300px;
+}
+}
