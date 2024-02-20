@@ -1,11 +1,11 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
-.logincontainer{
+
+.logincontainer {
     background-image: url(./login\ page\ wallpaper\ toyata.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,18 +15,21 @@
     align-items: center;
     gap: 100px;
 }
-.loginbox1{
+
+.loginbox1 {
     height: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.loginbox1 > p{
+
+.loginbox1>p {
     color: aliceblue;
     font-size: 20px;
 }
-.login1{
+
+.login1 {
     text-decoration: none;
     color: blue;
     background-color: aliceblue;
@@ -34,7 +37,8 @@
     border-radius: 5px;
     font-weight: 900;
 }
-.loginbox1 > button{
+
+.loginbox1>button {
     width: 125px;
     height: 40px;
     border-radius: 10px;
@@ -44,7 +48,8 @@
     color: aliceblue;
     margin-bottom: -10px;
 }
-.loginsubcontainer{
+
+.loginsubcontainer {
     background-color: rgba(10, 10, 10, 0.7);
     padding: 40px;
     display: flex;
@@ -55,7 +60,8 @@
     border-radius: 10px;
     cursor: pointer;
 }
-.loginsubcontainer > button{
+
+.loginsubcontainer>button {
     width: 125px;
     height: 40px;
     border-radius: 10px;
@@ -65,55 +71,65 @@
     color: aliceblue;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: red;
 }
-.login1:hover{
-    background-color:blue;
+
+.login1:hover {
+    background-color: blue;
     color: aliceblue;
     padding: 5px;
     border-radius: 7px;
 }
-input{
+
+input {
     min-width: 250px;
     height: 45px;
     padding-left: 10px;
     position: relative;
 }
-label{
+
+label {
     font-weight: 600;
     color: aliceblue;
 }
-span{
+
+span {
     display: flex;
     align-items: center;
     position: relative;
 }
-i{
+
+i {
     background-color: aliceblue;
     height: 39px;
     width: 43px;
     position: absolute;
-    right:1px;
+    right: 1px;
     border: none;
     font-size: 25px;
     padding-top: 7px;
     padding-left: 7px;
 }
-@media screen and (min-width:300px) and (max-width:950px){
-    .logincontainer{
+
+@media screen and (min-width:300px) and (max-width:950px) {
+    .logincontainer {
         display: grid;
         grid-template-columns: auto;
     }
-    .loginsubcontainer{
+
+    .loginsubcontainer {
         padding: 20px;
     }
-    .logo{
+
+    .logo {
         width: 300px;
     }
-    .loginsubcontainer{
+
+    .loginsubcontainer {
         padding: 20px;
         width: fit-content;
-       
+
     }
 }
